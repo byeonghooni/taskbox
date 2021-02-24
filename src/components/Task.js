@@ -18,7 +18,7 @@ const Task = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => (
         value={title}
         readOnly={true}
         placeholder="Input title"
-        style={{ background: 'red' }}
+        style={{ textOverflow: 'ellipsis' }}
       />
     </div>
     <div className="actions" onClick={ event => event.stopPropagation() }>
